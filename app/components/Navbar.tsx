@@ -7,7 +7,7 @@ const Navbar = async() => {
     const session = await isSession()
     
   return (
-    <div className='bg-gray-200 flex items-center justify-between pr-8 pl-8 h-7 text-black'>
+    <div className='bg-gray-200 flex items-center justify-between pr-8 pl-8 h-7 text-black sticky top-14'>
         <div>
             <ul className='flex flex-row gap-5'>
                 <li className='border-r-gray-400 border-2 pr-5'>
@@ -16,7 +16,7 @@ const Navbar = async() => {
                 <li className='border-r-gray-400 border-2 pr-5'>
                     Consumer
                 </li>
-                <li>
+                <li className='border-r-gray-400 border-2 pr-5'>
                     For DIS
                 </li>
             </ul>
